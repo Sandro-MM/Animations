@@ -1,0 +1,39 @@
+.main-container{
+  background: url("../../../assets/img/background.webp");
+
+}
+.clutch{
+  margin-top: 244px;
+}
+.slick-wrapper {
+  width: 90%;
+  margin-top: 130px;
+  margin-bottom: 36px;
+  z-index: 60;
+  img {
+    margin-right: 16px;
+  }
+}
+
+.header-routes {
+  a {
+    color: #2a3342;
+    &:hover {
+      color: #009FA8 !important;
+    }
+  }
+}
+.mid-btn {
+  display: inline-flex;
+  padding: 18px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 31px;
+  background: #fff;
+  color: #2a3342;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  margin-top: 36px;
+}

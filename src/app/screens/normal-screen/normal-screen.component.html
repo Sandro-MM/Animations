@@ -1,0 +1,36 @@
+<div class="pos">
+<header>
+  <a class="">
+    <img alt="2" src="../assets/img/Logo.png">
+  </a>
+  <ul class="header-routes">
+    @for(link of links; track link){
+      <a> {{link}} </a>
+    }
+  </ul>
+  <a href="https://calendly.com/reziparulava/15min" class="btn">Talk to us</a>
+</header>
+<div class="main-container centrify">
+  <img class="clutch" ngSrc="../assets/img/Frame%203.png" alt="clutch" height="36" width="200">
+  <div class="flip-need centrify">
+    <p>Need</p>
+    <div class="flip-container centrify" id="scrollable">
+      @for(word of words; track trackWord){
+        <span>{{ word }}</span>
+      }
+    </div>
+  </div>
+  <a class="centrify mid-btn" href="https://calendly.com/reziparulava/15min">Talk to us</a>
+
+  <ng-container>
+    <ngx-slick-carousel
+      class="slick-wrapper"
+      #slickModal ='slick-carousel'
+      [config]="slideConfig">
+      @for(logo of logos; track logo.path){
+        <img class="slide-img" ngxSlickItem [ngSrc]="logo.path" alt="1" height="80" width="180">
+      }
+    </ngx-slick-carousel>
+  </ng-container>
+</div>
+</div>
